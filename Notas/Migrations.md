@@ -1,3 +1,5 @@
+# Migrations
+
 - Usada para criar tabelas no banco de dados
 
 `php artisan make:migration create_name_table`

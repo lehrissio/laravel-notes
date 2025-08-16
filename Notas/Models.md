@@ -1,3 +1,5 @@
+# Models
+
 - Está relacionado com as comunicações feitas com a base de dados
 - Eloquent ORM (Object-Relational Mapping)
 - Permite fazer uma abstração da escrita de querys puras em SQL
@@ -5,7 +7,8 @@
 
 `php artisan make:model Name`
 
-- O nome deve ser único e estar no singular
+- O nome deve ser único, estar no singular e ter a primeira letra maiúscula
+- Deve também ser igual ao nome da tabela no banco de dados
 
 ```
 app/Models/User.php
@@ -24,7 +27,7 @@ class User extends Model
 - Para testar o model, pode-se usar o código abaixo no controller
 
 ```
-app/Http/Controllers/Authcontroller.php
+app/Http/Controllers/AuthController.php
 
 // retorna todos os usuários do banco de dados
 
@@ -36,7 +39,7 @@ print_r($users);
 - ou
 
 ```
-app/Http/Controllers/Authcontroller.php
+app/Http/Controllers/AuthController.php
 
 // como instancia de objeto da classe model
 
